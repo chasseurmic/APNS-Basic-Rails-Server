@@ -9,7 +9,7 @@ Bundler.require(:default, Rails.env)
 module APNS
   class Application < Rails::Application
 
-    APNS.host = 'gateway.push.apple.com' 
+    # APNS.host = 'gateway.push.apple.com' 
     # gateway.sandbox.push.apple.com is default
 
     APNS.pem  = File.join(Rails.root, 'lib','APNSCocoaHunter.pem')
