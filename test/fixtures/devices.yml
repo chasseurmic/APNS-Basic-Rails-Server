@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: devices
+#
+#  id         :integer          not null, primary key
+#  token      :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  token: MyString
+
+two:
+  token: MyString

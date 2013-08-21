@@ -1,0 +1,18 @@
+<h1>Listing devices</h1>
+
+<table>
+  <tr>
+    <th>Token</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @devices.each do |device| %>
+  <tr>
+    <td><%= device.token %></td>
+    <td><%= link_to 'Send notification',  controller: "home", action: "send_notification", token: device.token%></td>
+  </tr>
+<% end %>
+</table>
+
